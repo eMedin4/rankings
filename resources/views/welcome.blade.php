@@ -11,7 +11,7 @@
 	<script src="https://use.typekit.net/ocy2tfu.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script src="https://use.fortawesome.com/73e4e1b7.js"></script>
-	<link rel="stylesheet" href="http://localhost/rankingssd/public/assets/css/style.css">
+	<link rel="stylesheet" href="http://rankingssd.com/assets/css/style.css">
 	<!--top scripts-->
 		</head>
 
