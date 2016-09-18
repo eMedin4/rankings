@@ -1,0 +1,548 @@
+/*
+	RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration:none; 
+}
+
+
+/*
+	MAIN
+*/
+
+body {
+    font-family: "myriad-pro",sans-serif;
+    font-family: "ff-netto-web",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+	color: #444;
+	font-size: 18px;
+}
+
+.content {
+
+	margin: 0 auto;
+	max-width: 970px;
+	padding: 0 20px;
+}
+
+/*
+	LAYOUT
+*/	
+
+.header {
+    background: url('../images/ssd-test.jpg') no-repeat 100% 5%;
+    position: relative;
+    background-size: cover;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #232323;
+    opacity: 0.9;    
+}
+
+.grid-main {
+    background: #fff;
+}
+
+.grid {
+    background: #f2f2f2;
+    padding-top: 80px;
+}
+
+.grid-wrap {
+
+}
+
+.grid-items {
+
+}
+
+.grid-sidebar {
+    box-sizing: border-box;
+    min-width: 220px;
+    min-height: 200px;
+    background: #fff;
+    margin-left: 50px;
+    font-size: 14px;
+    color: #7b7b7b;
+    padding: 20px;
+}
+
+/*
+	GENERAL
+*/
+
+.logo {
+    padding: 14px 20px 14px 0;
+}
+
+.logo h1 {
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.logo i {
+     position: relative;
+    top: -2px;   
+}
+
+.logo span {
+    color: #5d5d5d;
+    padding-left: 4px;
+}
+
+.header h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+    padding: 20px 0;
+    color: #527bb5;
+}
+
+.header h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+    width: 40%;
+    padding-bottom: 10px;
+    line-height: 26px;
+}
+
+
+.header time {
+    color: #89a6bf;
+    font-weight: 300;
+}
+
+.header-back {
+    height: 200px;
+    background: url('../images/ssd.png') no-repeat 0 0;
+}
+
+.item-image {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+
+.item-title {
+    padding: 26px 0 24px 310px;
+    border-bottom: 1px solid #f2f2f2;
+    background: #f9f9f9;
+}
+
+.item-image img {
+    /*box-shadow: 0 10px 6px -6px #969696;*/
+}
+
+.item-wrap {
+    background: #fff;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.item-content {
+    padding: 10px 40px 22px 310px;
+}
+
+.item-data {
+    flex-grow: 1;
+    padding: 36px 40px 36px 20px;
+}
+
+.item-brand {
+    letter-spacing: -1px;
+    font-size: 28px;
+}
+
+.item-price {
+    letter-spacing: -1px;
+    font-size: 24px;
+}
+
+.item-price i {
+    font-size: 16px;
+    padding-left: 1px;
+}
+
+.item-description {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 0;
+    line-height: 18px;
+}
+
+.item-size {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.item-size i {
+    font-size: 20px;
+    padding-right: 6px;
+    position: relative;
+    top: 2px;
+}
+
+.item-size .extra {
+    padding-left: 20px; 
+}
+
+.item-price abbr {
+    font-size: 17px;
+    opacity: 0.6;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: relative; /*para ir sobre el overlay*/
+}
+
+.menu-header a {
+    display: inline-block;
+    font-weight: 600;
+    padding: 20px 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.menu-header .btn-contact {
+
+}
+
+
+/*
+    DASHBOARD
+*/
+
+.dashboard-wrap {
+    margin: 20px;
+}
+
+.catalog {
+
+}
+
+.catalog th {
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.catalog td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.catalog .catalog-split {
+    border-right-width: 6px;
+}
+
+.no-avaibility td {
+    background: #f0f0f0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item-meta {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.stats {
+
+}
+
+.item-info {
+    text-align: right;
+    margin-left: 50px;
+}
+
+.stat-wrap {
+    display: flex;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.bar-stat {
+    width: 100%;
+    height: 15px;
+    background: #f9f9f9;
+    position: relative;
+    top: 3px;
+}
+
+.bar-percent {
+    height: 100%;
+    position: absolute;   
+}
+
+.bar-percent-100 { width: 100%; background: #76d57a; }
+.bar-percent-90 { width: 90%; background: #94dd73; }
+.bar-percent-80 { width: 80%; background: #a8e172; }
+.bar-percent-70 { width: 70%; background: #bfe570; }
+.bar-percent-60 { width: 60%; background: #d8ea6f; }
+.bar-percent-50 { width: 50%; background: #eee96d; }
+.bar-percent-40 { width: 40%; background: #f2d56b; }
+.bar-percent-30 { width: 30%; background: #f6be69; }
+.bar-percent-20 { width: 20%; background: #faa567; }
+
+.label-stat {
+    font-size: 16px;
+    width: 270px;
+    padding-right: 20px;
+}
+
+.label-stat span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    line-height: 13px;
+}
+
+.value-stat {
+    width: 122px;
+    text-align: right;
+    font-size: 16px;
+    padding-left: 16px;
+    letter-spacing: -0.5px;
+}
+
+.item-commerce {
+    display: flex;
+    margin-top: 14px;
+    text-align: right;
+}
+
+.item-shop {
+    font-size: 16px;
+    margin-top: 7px;
+    letter-spacing: -0.6px;
+    padding-left: 8px;
+}
+
+.line {
+    margin: 0 40px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.line span {
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid #f5f5f5;
+    top: 50%;
+}
+
+.award-label {
+    font-size: 12px;
+    color: #999;
+    padding-top: 4px;
+}
+
+.award {
+    display: inline-block;
+}
+
+.award p {
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    margin-top: 2px;
+}
+
+.stars {
+    /*color: #fcc431; color amarillo bueno*/
+    color: #5fbf63;
+    font-size: 44px;
+}
+
+.head-content {
+    text-align: center;
+    letter-spacing: -1px;
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    padding: 60px 0 90px;
+}
+
+.head-content i {
+    font-size: 120px;
+    padding-bottom: 10px;
+    color: #a5c1ec;
+}
+
+.header p {
+    padding-bottom: 10px;
+}
+
+.main-btn {
+    padding: 12px 60px;
+    background: #5895ea;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    display: inline-block;
+    letter-spacing: 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#filters p {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+#filters .extra {
+    padding-top: 20px;
+}
+
+#filters div {
+    padding: 5px 0;
+}
+
+
+
+/*checkbox style*/
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:#ccc;
+}
+
+/*end checkbox style*/
+
+
+
+
+.introduction {
+    padding: 40px 0 60px;
+    background: #f9f9f9;  
+}
+
+.introduction h1 {
+    font-size: 78px;
+    padding-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: -5px;
+    margin-left: -2px;
+}
+
+.introduction p {
+    line-height: 30px;
+    font-size: 18px;    
+}
+
+.menu-nav {
+    background: #f2f2f2;
+    line-height: 26px;
+    padding: 20px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.menu-nav a {
+    font-size: 18px;
+    padding: 6px 12px;
+    margin: 6px 0;
+    display: inline-block;
+    color: #f2f2f2;
+    letter-spacing: -0.5px;
+    background: #444;
+}
+
+.menu-lists a {
+
+}
+
+.menu-nav h2 {
+    letter-spacing: -0.5px;
+    padding: 30px 0 6px;
+    font-size: 20px;
+}
