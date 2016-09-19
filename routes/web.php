@@ -12,6 +12,7 @@
 */
 
 
+
 Route::get('/', ['as' => 'main', 'uses' => 'MainController@main']);
 Route::get('/samsung-evo-750', ['as' => 'evo750', 'uses' => 'MainController@single']);
 Route::get('/samsung-evo-850', ['as' => 'evo850', 'uses' => 'MainController@single']);

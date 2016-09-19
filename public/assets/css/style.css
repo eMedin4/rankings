@@ -1,6 +1,7 @@
 /*
-	RESET
+    RESET
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -15,36 +16,36 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
     box-sizing: border-box;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 img {
@@ -60,7 +61,7 @@ a {
 
 
 /*
-	MAIN
+    MAIN
 */
 
 .flex-h {
@@ -68,8 +69,8 @@ a {
 }
 
 body {
-	color: #444;
-	font-size: 18px;
+    color: #444;
+    font-size: 18px;
     line-height: 34px;
     font-family: "open-sans",sans-serif;
     font-style: normal;
@@ -150,7 +151,7 @@ h2 {
 }
 
 .navigation a:hover {
-	color: #1f86a1;
+    color: #1f86a1;
 }
 
 
@@ -257,7 +258,7 @@ display: inline-block;
 }
 
 .item-shop span {
-	font-size: 14px;
+    font-size: 14px;
     letter-spacing: -0.6px;
     border-bottom: 1px dotted;
     color: #3798e2;
@@ -274,7 +275,7 @@ display: inline-block;
 }
 
 .award-label span {
-	font-size: 10px;
+    font-size: 10px;
 }
 
 .item-price {
@@ -331,7 +332,7 @@ display: inline-block;
 
 
 .item-image img {
-	width: 100%;
+    width: 100%;
     padding-bottom: 8px;
 }
 
@@ -353,35 +354,35 @@ display: inline-block;
 }
 
 .item-data h4 span {
-	font-weight: 400;
+    font-weight: 400;
     padding-right: 12px;
 }
 
 .item-data .extra {
-	width: 100%;
-	height: 1px;
-	background: #eaeaea;
-	padding: 20px 0;
+    width: 100%;
+    height: 1px;
+    background: #eaeaea;
+    padding: 20px 0;
 }
 
 .item-data .price {
     border-top: 1px solid #eaeaea;
     padding-top: 10px;
     margin-top: 18px;
-    padding-bottom: 0;	
+    padding-bottom: 0;  
 }
 
 .item-data .price i {
-	background: #444;
-	color: #fff;
-	display: inline-block;
+    background: #444;
+    color: #fff;
+    display: inline-block;
     padding: 0 4px;
 }
 
 
 
 /*
-	dashboard
+    dashboard
 */
 
 .dashboard-wrap {
@@ -389,7 +390,7 @@ display: inline-block;
 }
 
 .catalog {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 .catalog th {
