@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Pelicula')
+@section('title', '{{$content['h1']}}')
 
 @section('bodyclass', 'category')
 

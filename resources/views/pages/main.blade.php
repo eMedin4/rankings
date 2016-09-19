@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Pelicula')
+@section('title', '¿Que ssd comprar? - RankingSSD')
 
 @section('bodyclass', 'mainpage')
 
