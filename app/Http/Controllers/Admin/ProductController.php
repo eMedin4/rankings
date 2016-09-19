@@ -39,6 +39,7 @@ class ProductController extends Controller
 		} 
 
 
+
 		foreach ($getAmazonData->Items->Item as $item) {
 			//si tiene variaciones tiene parentasin
 			if($item->ParentASIN) {
@@ -76,8 +77,8 @@ class ProductController extends Controller
 		$params = array(
 		    "Service" => "AWSECommerceService",
 		    "Operation" => "ItemSearch",
-		    "AWSAccessKeyId" => "AKIAJSRBZQHC5I4Y3GPA",
-		    "AssociateTag" => "dfsfdsdfsd",
+		    "AWSAccessKeyId" => $aws_access_key_id,
+		    "AssociateTag" => "rankingssd-21",
 		    "SearchIndex" => "PCHardware",
 		    "ResponseGroup" => "Images,ItemAttributes,Offers,SalesRank",
 		    "Version" => "2013-08-01",
@@ -135,8 +136,8 @@ class ProductController extends Controller
 		$params = array(
 		    "Service" => "AWSECommerceService",
 		    "Operation" => "ItemLookup",
-		    "AWSAccessKeyId" => "AKIAJSRBZQHC5I4Y3GPA",
-		    "AssociateTag" => "indicecinenet-21",
+		    "AWSAccessKeyId" => $aws_access_key_id,
+		    "AssociateTag" => "rankingssd-21",
 		    "ItemId" => $parentAsin,
 		    "IdType" => "ASIN",
 		    "ResponseGroup" => "Variations",
