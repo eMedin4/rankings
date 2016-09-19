@@ -66,13 +66,13 @@ class Repository {
 
     public function MaxPrice($price)
     {
-        return Product::join('stats', 'products.id', '=', 'stats.product_id')->where('avaibility', '1')->where('price', '>', $price)->get();
+        return Product::join('stats', 'products.id', '=', 'stats.product_id')->where('avaibility', '1')->where('price', '<', $price)->get();
     }
 
 
     public function Size($minSize, $maxSize)
     {
-        return Product::join('stats', 'products.id', '=', 'stats.product_id')->where('avaibility', '1')->whereBetween('price', [$minSize, $maxSize])->get();
+        return Product::join('stats', 'products.id', '=', 'stats.product_id')->where('avaibility', '1')->whereBetween('size', [$minSize, $maxSize])->get();
     }
 
     public function Format($format1, $format2)

@@ -17,9 +17,9 @@
 				<div class="content">
 
 					<div class="content-text">
-						<h1>{{$title}}</h1>
-						<h2>El SSD barato de Samsung</h2>	
-						<p>{{$description}}</p>	
+						<h1>{{$content['h1']}}</h1>
+						<h2>{{$content['h2']}}</h2>	
+						<p>{{$content['p']}}</p>	
 					</div>
 
 					@include('includes.loop');

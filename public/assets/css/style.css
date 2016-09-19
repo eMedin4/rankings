@@ -68,6 +68,19 @@ a {
     display: flex;
 }
 
+a {
+    color: #3c85cc;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #135596;
+}
+
+article h3 a {
+    color: #444;
+}
+
 body {
     color: #444;
     font-size: 18px;
@@ -84,9 +97,10 @@ body {
 }
 
 .header {
-    background: linear-gradient(to top, #444 , #222);
+    background: #333;
     color: #f0f0f0;
 }
+
 
 .header-inner {
     padding: 0 20px;
@@ -125,6 +139,7 @@ h2 {
 
 .grid {
     display: flex;
+    align-items: flex-start;
 }
 
 .header p {
@@ -137,7 +152,6 @@ h2 {
 
 .navigation a {
     display: block;
-    color: #1a5288;
     transition: color 0.3s ease;
 }
 
@@ -150,9 +164,6 @@ h2 {
     color: #444;
 }
 
-.navigation a:hover {
-    color: #1f86a1;
-}
 
 
 
@@ -173,9 +184,12 @@ h2 {
 
 .sidebar {
     width: 20%;
-    padding: 40px 40px;
+    padding: 30px 40px;
     background: #f5f8fa;
     border-radius: 10px;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 20px;
 }
 
 
@@ -195,16 +209,6 @@ h2 {
     border-bottom: 1px solid hsla(0,0%,100%,.1);
 }
 
-.top-bar-left a {
-    display: inline-block;
-    padding: 10px 2px;
-    margin: 5px 0;
-    color: #efefef;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 31px;
-    font-family: "open-sans-condensed",sans-serif; 
-}
 
 .top-bar-left a span {
     padding-left: 1px;
@@ -427,7 +431,7 @@ display: inline-block;
 .header-main {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0 60px;
+    padding: 60px 0 60px 40px;
 }
 
 .header-main-left {
@@ -604,3 +608,34 @@ article p {
 .item-value-2 { background:#f2d56b; }
 .item-value-1 { background:#faa567; }
 
+.grid-image img {
+    box-shadow: 0 12px 7px -8px #c5c5c5;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.grid-image img:hover {
+    box-shadow: 0 12px 7px -8px #888;
+}
+
+.logo {
+    display: inline-block;
+    padding: 8px 2px;
+    margin: 5px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 26px;
+    font-family: "open-sans-condensed",sans-serif;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.logo .l1 { color:#eee96d; padding-left: 2px; }
+.logo .l2 { color:#d8ea6f; }
+.logo .l3 { color:#a8e172; }
+
+.logo span {
+    font-size: 30px;
+}

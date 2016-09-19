@@ -23,7 +23,7 @@ Route::get('/ssd-menos-de-200', ['as' => 'max200', 'uses' => 'MainController@max
 Route::get('/mejor-ssd-de-128gb', ['as' => 'b128', 'uses' => 'MainController@b128']);
 Route::get('/mejor-ssd-de-256gb', ['as' => 'b256', 'uses' => 'MainController@b256']);
 Route::get('/mejor-ssd-de-512gb', ['as' => 'b512', 'uses' => 'MainController@b512']);
-Route::get('/mejor-ssd-de-1tb', ['as' => 'b1tb', 'uses' => 'MainController@n1tb']);
+Route::get('/mejor-ssd-de-1tb', ['as' => 'b1tb', 'uses' => 'MainController@b1tb']);
 Route::get('/mejor-ssd-m2', ['as' => 'fm2', 'uses' => 'MainController@fm2']);
 
 /*

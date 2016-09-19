@@ -6,11 +6,11 @@
 	<div class="flex-h">
 
 		<div class="grid-image">
-			<img src="{{asset('/assets/images') . $product->image}}">
+			<a href="{{$product->url}}"><img src="{{asset('/assets/images') . $product->image}}"></a>
 		</div>
 
 		<div class="grid-data">
-			<h3>{{$product->title}} {{$product->size_format}}</h3>
+			<h3><a href="{{$product->url}}">{{$product->title}} {{$product->size_format}}</a></h3>
 			<div><h4>Capacidad</h4><p>{{$product->size_format}}</p></div>
 			<div><h4>Modelo</h4><p>{{$product->model}}</p></div>
 			<div><h4>Formato</h4><p>{{$product->format}}</p></div>
@@ -68,8 +68,8 @@
 		<table class="rank">
 
 			<tr>
-				<td><p>€{{$product->price['integer']}},{{$product->price['decimal']}}</p></td>
-				<td>Amazon</td>
+				<td><p><a href="{{$product->url}}">€{{$product->price['integer']}},{{$product->price['decimal']}}</a></p></td>
+				<td><a href="{{$product->url}}">Amazon</a></td>
 			</tr>
 
 			<tr>

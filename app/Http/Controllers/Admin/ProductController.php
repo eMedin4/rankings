@@ -42,7 +42,7 @@ class ProductController extends Controller
 
 		foreach ($getAmazonData->Items->Item as $item) {
 			//si tiene variaciones tiene parentasin
-			if($item->ParentASIN) {
+			if(isset($item->ParentASIN)) {
 				//cojemos los productos 'variaciones' y los recorremos
 				sleep(2);
 				$getAmazonVariations = $this->getAmazonVariations($item->ParentASIN);

@@ -12,10 +12,12 @@ class MainController extends Controller
 {
 	
 	private $repository;
+	private $request;
 
-	public function __Construct(Repository $repository)
+	public function __Construct(Repository $repository, Request $request)
 	{
         $this->repository = $repository;
+        $this->request = $request;
 	}
 
     public function main()
@@ -24,64 +26,60 @@ class MainController extends Controller
 		return view('pages.main')->with(compact('products'));
     }
 
-	public function single(Request $request)
+	public function single()
 	{
-		$title = str_replace('-', ' ', $request->path());
-		$description = config('products.descriptions')[$request->route()->getName()];
-		$search = str_replace('-', ' + ', $request->path());
+		$content = config('products.descriptions')[$this->request->route()->getName()];
+		$search = str_replace('-', ' + ', $this->request->path());
 		$products = $this->repository->search($search);
-		return view('pages.category')->with(compact('products', 'title', 'description'));
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 
 	public function max100()
 	{
-		$data = [
-			'h1' => 'Discos SSD baratos',
-			'h2' => '¿Cuales son los mejores discos ssd por menos de 100€?',
-			'p'  => ''
-		];
-		$products = $this->repository->MaxPrice(100);
-		return view('pages.category')->with(compact('products'));
+		$content = config('products.descriptions')[$this->request->route()->getName()];
+		$products = $this->repository->MaxPrice(10000);
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 
 	public function max200()
 	{
-		$data = [
-			'h1' => 'Discos SSD recomendados',
-			'h2' => 'Valoramos los mejores discos SSD por menos de 200€',
-			'p'  => ''
-		];
-		$products = $this->repository->MaxPrice(200);
-		return view('pages.category')->with(compact('products'));
+		$content = config('products.descriptions')[$this->request->route()->getName()];
+		$products = $this->repository->MaxPrice(20000);
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 
 	public function b128()
 	{
+		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(100,200);
-		return view('pages.category')->with(compact('products'));
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 
 	public function b256()
 	{
+		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(200,400);
-		return view('pages.category')->with(compact('products'));
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 
 	public function b512()
 	{
+		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(400,800);
-		return view('pages.category')->with(compact('products'));
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 	
 	public function b1tb()
 	{
+		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(800,8000);
-		return view('pages.category')->with(compact('products'));
+		return view('pages.category')->with(compact('products', 'content'));
 	}	
 
 	public function fm2()
 	{
+		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Format('M.2 Sata 3', 'M.2 PCIe');
-		return view('pages.category')->with(compact('products'));
+		return view('pages.category')->with(compact('products', 'content'));
 	}
 }

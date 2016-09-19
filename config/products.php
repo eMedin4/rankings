@@ -158,10 +158,78 @@ return [
     ],
 
     'descriptions' => [
-        'evo750' => 'A prinipios de 2016 Samsung presentó sus nuevos 750 EVO con 2 modelos de poca capacidad (120 y 250GB), y el pasado mes de Junio añadió a la gama el modelo de 500GB. La línea 750 EVO es la opción mas económica de la marca, un producto pensado para para competir en la gama baja donde prima la relacion precio por GB. A nivel técnico se encuentra solo un paso por debajo de su hermoano mayor (850 EVO), monta controlador MGX, chips NAND TLC (sin tecnología 3D NAND) y 256 MB de caché DRAM y ofrece 3 años de garantía (a diferencia de los 5 años del 850 EVO). El cuidado que le ha dado Samsung a su SSD más económico propicia un gran resultado en los tests de rendimiento, que se va aproximando al máximo en la que su madura interfaz Sata 3 puede trabajar (500MB/s), y se ha convertido rapidamente en uno de los modelos mas vendidos del mercado. Si buscas un SSD bueno y barato, cómpralo.',
-        'evo850' => 'Siguiendo la línea de éxito de su predecesor, el 840 EVO, y una vez subsanados algunos de sus problemas de rendimiento, encontramos uno de los SSD más populares, el 850 Evo. Un producto con capacidades disponibles desde los 120 GB hasta los mas nuevos de 4Tb, se ha convertido en todo un referente y desde hace tiempo se encuentran entre los mas vendidos en las principales tiendas online. Como podemos observar en los tests, el 850 EVO presenta un rendimiento excelente al exprimir al máximo las capacidades del Sata 3, y aunque los 520 MB/s de escritura y 540 MB/s de lectura que anuncia Samsung en sus especificaciones oficiales, caen como es habitual en ser demasiado optimistas, los valores reales no estan tan alejados como en otros casos, y son hasta el momento los mejores resultados en este formato que encontramos en rankingssd.com. Si ademas tenemos en cuenta su ajustado precio nos encontramos ante una compra mas que recomendada, una compra maestra.',
-        'v300' => 'El SSDNow V300 es un veterano (muy veterano) modelo de Kingston, fue presentado en varano del 2013 y se ubica en la gama mas baja de la marca. Tras superar varios problemas iniciales con firmwares anteriores al 5.0.5, se ha asentado con el paso del tiempo hasta convertirse en la actualidad en uno de los modelos con mayor cuota de mercado. El fabricante nos anuncia unos valores de 450MB/s en lectura y 450MB/s en escritura, bastante alejadas de las medidas reales, que se situan en un rango medio de rendimiento. Válido si deseas gastar lo menos posible . El V300 se encuentra disponible en capacidades de 16, 120, 240 y 480GB y ofrece 3 años de garantía.',
-        'uv400' => 'Kingston dispone desde el pasado mes de Mayo de 2016 de un nuevo modelo dentro de la familia SSDNOW, el UV400. Es la evolución del casi testimonial UV300 y se situa como todos los SSDNOW en la supuesta gama de entrada. Es también el segundo TLC NAND de Kingston (tras el mencionado UV300), usa un TLC NAND Toshiba 15nm y controlador Marvell de 4 canales 88SS1074 y ofrece 550 MB/s de lectura y de 350 a 500 MB/s en escritura, siempre según fabricante. En la práctica el rendimiento es muy similar al de su hermano pequeño, el SSDNOW V300. También lo es el precio, por lo que ambas opciones son similares. El UV400 viene con cuatro variantes de almacenamiento, 120, 240, 480 y 960GB y 3 años de garantía.',
+        'evo750' => [
+            'h1' => 'Samsung EVO 750',
+            'h2' => 'El SSD barato de Samsung',
+            'p' => 'A prinipios de 2016 Samsung presentó sus nuevos 750 EVO con 2 modelos de poca capacidad (120 y 250GB), y el pasado mes de Junio añadió a la gama el modelo de 500GB. La línea 750 EVO es la opción mas económica de la marca, un producto pensado para para competir en la gama baja donde prima la relacion precio por GB. A nivel técnico se encuentra solo un paso por debajo de su hermoano mayor (850 EVO), monta controlador MGX, chips NAND TLC (sin tecnología 3D NAND) y 256 MB de caché DRAM y ofrece 3 años de garantía (a diferencia de los 5 años del 850 EVO). El cuidado que le ha dado Samsung a su SSD más económico propicia un gran resultado en los tests de rendimiento, que se va aproximando al máximo en la que su madura interfaz Sata 3 puede trabajar (500MB/s), y se ha convertido rapidamente en uno de los modelos mas vendidos del mercado. Si buscas un SSD bueno y barato, cómpralo.'
+            ],
+        'evo850' => [
+            'h1' => 'Samsung EVO 850',
+            'h2' => 'El SSD más vendido de Samsung',
+            'p' => 'Siguiendo la línea de éxito de su predecesor, el 840 EVO, y una vez subsanados algunos de sus problemas de rendimiento, encontramos uno de los SSD más populares, el 850 Evo. Un producto con capacidades disponibles desde los 120 GB hasta los mas nuevos de 4Tb, se ha convertido en todo un referente y desde hace tiempo se encuentran entre los mas vendidos en las principales tiendas online. Como podemos observar en los tests, el 850 EVO presenta un rendimiento excelente al exprimir al máximo las capacidades del Sata 3, y aunque los 520 MB/s de escritura y 540 MB/s de lectura que anuncia Samsung en sus especificaciones oficiales, caen como es habitual en ser demasiado optimistas, los valores reales no estan tan alejados como en otros casos, y son hasta el momento los mejores resultados en este formato que encontramos en rankingssd.com. Si ademas tenemos en cuenta su ajustado precio nos encontramos ante una compra mas que recomendada, una compra maestra.'
+            ],
+
+        'v300' => [
+            'h1' => 'Kingston SSDNow V300',
+            'h2' => 'Uno de los SSD más conocidos y mas económicos, lo examinamos',
+            'p' => 'El SSDNow V300 es un veterano (muy veterano) modelo de Kingston, fue presentado en varano del 2013 y se ubica en la gama mas baja de la marca. Tras superar varios problemas iniciales con firmwares anteriores al 5.0.5, se ha asentado con el paso del tiempo hasta convertirse en la actualidad en uno de los modelos con mayor cuota de mercado. El fabricante nos anuncia unos valores de 450MB/s en lectura y 450MB/s en escritura, bastante alejadas de las medidas reales, que se situan en un rango medio de rendimiento. Válido si deseas gastar lo menos posible . El V300 se encuentra disponible en capacidades de 16, 120, 240 y 480GB y ofrece 3 años de garantía.'
+            ],
+
+        'uv400' => [
+            'h1' => 'Kingston SSDNow UV400',
+            'h2' => 'Nuevo modelo de Kingston para el mercado de gama económica',
+            'p' => 'Kingston dispone desde el pasado mes de Mayo de 2016 de un nuevo modelo dentro de la familia SSDNOW, el UV400. Es la evolución del casi testimonial UV300 y se situa como todos los SSDNOW en la supuesta gama de entrada. Es también el segundo TLC NAND de Kingston (tras el mencionado UV300), usa un TLC NAND Toshiba 15nm y controlador Marvell de 4 canales 88SS1074 y ofrece 550 MB/s de lectura y de 350 a 500 MB/s en escritura, siempre según fabricante. En la práctica el rendimiento es muy similar al de su hermano pequeño, el SSDNOW V300. También lo es el precio, por lo que ambas opciones son similares. El UV400 viene con cuatro variantes de almacenamiento, 120, 240, 480 y 960GB y 3 años de garantía.'
+            ],
+
+        'max100' => [
+            'h1' => 'Discos SSD baratos',
+            'h2' => '¿Cuales son los mejores discos ssd por menos de 100€?',
+            'p'  => ''
+        ],
+
+        
+        'max200' => [
+            'h1' => 'Discos SSD recomendados',
+            'h2' => 'Valoramos los mejores discos SSD por menos de 200€',
+            'p'  => ''
+        ],
+
+        
+        'b128' => [
+            'h1' => 'Discos SSD de 128GB',
+            'h2' => 'Guía de compra de SSD de 128GB',
+            'p'  => ''
+        ],
+
+        
+        'b256' => [
+            'h1' => 'Discos SSD de 256GB',
+            'h2' => 'Guía de compra de SSD de 256GB',
+            'p'  => ''
+        ],
+
+        
+        'b512' => [
+            'h1' => 'Discos SSD de 512GB',
+            'h2' => 'Guía de compra de SSD de 512B',
+            'p'  => ''
+        ],
+
+        
+        'b1tb' => [
+            'h1' => 'Discos SSD de 1TB',
+            'h2' => 'Guía de compra de SSD de 1TB',
+            'p'  => ''
+        ],
+
+        
+        'fm2' => [
+            'h1' => 'Discos SSD con formato M.2',
+            'h2' => '¿Qué es M.2? ¿Merece la pena? ¿Qué SSD M.2 hay disponibles actualmente?',
+            'p'  => ''
+        ],
+
+
 
     ],
 
