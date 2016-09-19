@@ -61,7 +61,7 @@ class Repository {
 
     public function getActiveProducts()
     {
-        return Product::join('stats', 'products.id', '=', 'stats.product_id')->where('avaibility', '1')->get();
+        return Product::join('stats', 'products.id', '=', 'stats.product_id')->where('avaibility', '1')->take(20)->get();
     }
 
     public function MaxPrice($price)
