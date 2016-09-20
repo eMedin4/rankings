@@ -162,4 +162,25 @@ class Product extends Model
     }
 
 
+    public function getRankingAttribute($value)
+    {
+        switch (true) {
+            case $value > 90: $class = 100; $value = 9;break;
+            case $value > 85: $class = 90; $value = 8;break;
+            case $value > 80: $class = 80; $value = 7;break;
+            case $value > 75: $class = 70; $value = 6;break;
+            case $value > 70: $class = 60; $value = 5;break;
+            case $value > 65: $class = 50; $value = 4;break;
+            case $value > 60: $class = 40; $value = 3;break;
+            case $value > 55: $class = 30; $value = 2;break;
+            default: $class = 50; $value = 1;break;
+        }
+
+        return [
+            'value'   => $value,
+            'class'   => $class
+        ];
+    }
+
+
 }

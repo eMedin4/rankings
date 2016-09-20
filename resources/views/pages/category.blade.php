@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', '{{$content['h1']}}')
+@section('title', $content['h1'])
 
 @section('bodyclass', 'category')
 
@@ -16,13 +16,18 @@
 
 				<div class="content">
 
-					<div class="content-text">
-						<h1>{{$content['h1']}}</h1>
-						<h2>{{$content['h2']}}</h2>	
-						<p>{{$content['p']}}</p>	
-					</div>
+					<div class="content-inner">
 
-					@include('includes.loop');
+						<div class="content-text">
+
+							<h1>{{$content['h1']}}</h1>
+							<h2>{{$content['h2']}}</h2>	
+							<p>{{$content['p']}}</p>	
+						</div>
+
+						@include('includes.loop');
+
+					</div>
 
 				</div>
 

@@ -11,9 +11,16 @@
 
 		<div class="grid-data">
 			<h3><a href="{{$product->url}}">{{$product->title}} {{$product->size_format}}</a></h3>
-			<div><h4>Capacidad</h4><p>{{$product->size_format}}</p></div>
-			<div><h4>Modelo</h4><p>{{$product->model}}</p></div>
-			<div><h4>Formato</h4><p>{{$product->format}}</p></div>
+			<div class="flex-h">
+				<div>
+					<div><h4>Modelo</h4><p>{{$product->model}}</p></div>
+					<div><h4>Capacidad</h4><p>{{$product->size_format}}</p></div>
+					<div><h4>Formato</h4><p>{{$product->format}}</p></div>
+				</div>
+				<div>
+					<a class="amazon-btn" href="{{$product->url}}">Amazon<span>{{$product->price['integer']}},{{$product->price['decimal']}}</span> €</a>
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -29,6 +36,14 @@
 					</span>
 				</td>
 				<td>{{$product->speed['value']}}<i>%</i></td>
+				<!-- *** -->
+				<td>Popularidad</td>
+				<td>
+					<span class="bar-stat">
+						<span class="bar-percent bar-percent-{{$product->popularity['class']}}"></span>
+					</span>
+				</td>
+				<td>{{$product->popularity['value']}}<i>%</i></td>
 			</tr>
 			<tr>
 				<td>Velocidad de lectura</td>
@@ -38,6 +53,14 @@
 					</span>
 				</td>
 				<td>{{$product->read['value']}}<i>MB/s</i></td>
+				<!-- *** -->
+				<td>€/1GB</td>
+				<td>
+					<span class="bar-stat">
+						<span class="bar-percent bar-percent-{{$product->price_relative['class']}}"></span>
+					</span>
+				</td>
+				<td>{{$product->price_relative['value']}}<i>€</i></td>		
 			</tr>
 			<tr>
 				<td>Velocidad de escritura</td>
@@ -47,15 +70,14 @@
 					</span>
 				</td>
 				<td>{{$product->write['value']}}<i>MB/s</i></td>
-			</tr>
-			<tr>
-				<td>Popularidad<span>Cuota de mercado</span></td>
+				<!-- *** -->
+				<td>Valoración</td>
 				<td>
 					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->popularity['class']}}"></span>
+						<span class="bar-percent bar-percent-{{$product->ranking['class']}}"></span>
 					</span>
 				</td>
-				<td>{{$product->popularity['value']}}<i>%</i></td>
+				<td>{{$product->ranking['value']}}<i>/10</i></td>
 			</tr>
 		</table>		
 		
@@ -63,7 +85,7 @@
 
 	</div>
 
-	<div class="grid-rank">
+<!-- 	<div class="grid-rank">
 
 		<table class="rank">
 
@@ -94,7 +116,7 @@
 
 		</table>
 
-	</div>
+	</div> -->
 
 </article>
 

@@ -6,7 +6,7 @@
 
 				<div class="top-bar-inner">
 					<div class="top-bar-left">
-						<a class="logo" href="{{route('main')}}">Ranking<span class="l1">S</span><span class="l2">S</span><span class="l3">D</span></a>
+						<a class="logo" href="{{route('main')}}">Ranking<span>SSD</span></a>
 					</div>
 					<div class="top-bar-right">
 						<a href="#">PRODUCTOS</a>
@@ -19,9 +19,10 @@
 				<div class="header-main">
 
 					<div class="header-main-left">
-						<h1>¿Que SSD comprar?</h1>
+						<h1>¿Que disco SSD comprar?</h1>
 
-						<h2>¿Cuál es el mas rápido? ¿Y el de mejor precio? ¿Cuál no comprar?</h2><p>En RankingSSD te lo enseñamos y te ayudamos a elegir, valoramos los más populares y los más vendidos del momento, ¿Merecen todos la pena?</p>				
+						<h2>¿Buscas disco duro ssd? ¿Sabes cuál es el más rápido,<br> el más barato, o el más usado?</h2>
+				
 					</div>
 
 					<div class="header-main-right">
