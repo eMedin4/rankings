@@ -27,61 +27,50 @@
 
 	<div class="grid-stats">
 
-		<table class="stats">
-			<tr>
-				<td>Rendimiento general</td>
-				<td>
-					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->speed['class']}}"></span>
-					</span>
-				</td>
-				<td>{{$product->speed['value']}}<i>%</i></td>
-				<!-- *** -->
-				<td>Popularidad</td>
-				<td>
-					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->popularity['class']}}"></span>
-					</span>
-				</td>
-				<td>{{$product->popularity['value']}}<i>%</i></td>
-			</tr>
-			<tr>
-				<td>Velocidad de lectura</td>
-				<td>
-					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->read['class']}}"></span>
-					</span>
-				</td>
-				<td>{{$product->read['value']}}<i>MB/s</i></td>
-				<!-- *** -->
-				<td>€/1GB</td>
-				<td>
-					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->price_relative['class']}}"></span>
-					</span>
-				</td>
-				<td>{{$product->price_relative['value']}}<i>€</i></td>		
-			</tr>
-			<tr>
-				<td>Velocidad de escritura</td>
-				<td>
-					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->write['class']}}"></span>
-					</span>
-				</td>
-				<td>{{$product->write['value']}}<i>MB/s</i></td>
-				<!-- *** -->
-				<td>Valoración</td>
-				<td>
-					<span class="bar-stat">
-						<span class="bar-percent bar-percent-{{$product->ranking['class']}}"></span>
-					</span>
-				</td>
-				<td>{{$product->ranking['value']}}<i>/10</i></td>
-			</tr>
-		</table>		
+		<div class="file file-1">
+
+			<div>
+				<div class="label">Rendimiento general</div>
+				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->speed['class']}}"></span></div>
+				<div class="value">{{$product->speed['value']}}<i>%</i></div>
+			</div>
+
+			<div>
+				<div class="label">Velocidad de lectura</div>
+				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->read['class']}}"></span></div>
+				<div class="value">{{$product->read['value']}}<i>MB/s</i></div>
+			</div>
+
+			<div>
+				<div class="label">Velocidad de escritura</div>
+				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->write['class']}}"></span></div>
+				<div class="value">{{$product->write['value']}}<i>MB/s</i></div>
+			</div>
+
+		</div>
+
+		<div class="file file-2">
+
+			<div>
+				<div class="label">Popularidad</div>
+				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->popularity['class']}}"></span></div>
+				<div class="value">{{$product->popularity['value']}}<i>%</i></div>
+			</div>
+
+			<div>
+				<div class="label">€/1GB</div>
+				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->price_relative['class']}}"></span></div>
+				<div class="value">{{$product->price_relative['value']}}<i>€</i></div>
+			</div>
+
+			<div>
+				<div class="label">Valoración</div>
+				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->ranking['class']}}"></span></div>
+				<div class="value">{{$product->ranking['value']}}<i>/10</i></div>
+			</div>
+
+		</div>
 		
-	
 
 	</div>
 

@@ -14,6 +14,9 @@
 						<a href="#">AVISO LEGAL</a>
 						<a href="#">CONTACTO</a>						
 					</div>
+					<div class="icon-responsive">
+						<i class="fa fa-menu"></i>
+					</div>
 				</div>
 
 			</div>
