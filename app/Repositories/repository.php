@@ -15,7 +15,7 @@ class Repository {
 		$product->id = $item->ASIN;
 		$product->url = $url;
 		$product->model = $item->ItemAttributes->Model;
-		$product->size = (int)$item->ItemAttributes->Size;
+		$product->size = $this->getSize($item->ASIN, $item->ItemAttributes->Size);
 		$product->title = $this->getTitle($item->ASIN, $item->ItemAttributes->Title);
 		$product->price = isset($item->Offers->Offer->OfferListing->Price->Amount) ? $item->Offers->Offer->OfferListing->Price->Amount : 0;
         $product->avaibility = isset($item->Offers->Offer->OfferListing->Price->Amount) ? 1 : 0;
@@ -44,8 +44,21 @@ class Repository {
         return $title;
     }
 
+    public function getSize($asin, $size)
+    {
+        if (!$size) {
+            if(array_key_exists((string)$asin, config('products.size'))) {
+                return config('products.size')[(string)$asin];
+            } else {
+                echo '############### El producto ' . $asin . ' no tiene capacidad declarada <br>';
+            }         
+        }
+        return (int)$size;
+    }
+
     public function resetAvaibility()
     {
+        Product::where('updated_at', '<=', Carbon::now()->subDays(5))->delete();
         DB::table('products')->update(['avaibility' => 0]);
     }
 

@@ -46,15 +46,16 @@ class ProductController extends Controller
 				//cojemos los productos 'variaciones' y los recorremos
 				sleep(2);
 				$getAmazonVariations = $this->getAmazonVariations($item->ParentASIN);
-				/*dd($getAmazonVariations);*/
-				if (!isset($getAmazonVariations) || $getAmazonVariations->Items->Request->IsValid == False || $getAmazonVariations->Items->Request->Errors ) {
-					dd($getAmazonVariations);
-				} 
-				/*echo '-------------' . $item->ParentASIN . '---------------';*/
 
-				foreach ($getAmazonVariations->Items->Item->Variations->Item as $itemVariation) {
-					if(!in_array($itemVariation->ASIN, config('products.ban'))) {
-						$this->repository->storeProduct($itemVariation, $item->DetailPageURL, $item->SalesRank);
+				/*if (!isset($getAmazonVariations) || $getAmazonVariations->Items->Request->IsValid == False || $getAmazonVariations->Items->Request->Errors ) {
+					dd($getAmazonVariations);
+				} */
+
+				if ($getAmazonVariations) {
+					foreach ($getAmazonVariations->Items->Item->Variations->Item as $itemVariation) {
+						if(!in_array($itemVariation->ASIN, config('products.ban'))) {
+							$this->repository->storeProduct($itemVariation, $item->DetailPageURL, $item->SalesRank);
+						}
 					}
 				}
 			} else {

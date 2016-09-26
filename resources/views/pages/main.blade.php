@@ -22,9 +22,9 @@
 
 					<div class="content-inner">
 
-						@include('includes.loop');
+						@include('includes.loop')
 
-						<p>Los discos SSD están ya aquí y se quedarán muchos años entre nosotros, son la realidad de un mercado del almacenamiento estancado durante años y muy necesitado de innovaciones. Silencio, menor consumo y velocidad, todo ello ha llegado de la mano de los SSD consolidándose muy rápidamente en el mercado doméstico. Te enseñamos todos los secretos de esta tecnología y analizamos los distintos modelos para que sepas que hay, y que comprar.</p>
+						<p class="description">Los discos SSD están ya aquí y se quedarán muchos años entre nosotros, son la realidad de un mercado del almacenamiento estancado durante años y muy necesitado de innovaciones. Silencio, menor consumo y velocidad, todo ello ha llegado de la mano de los SSD consolidándose muy rápidamente en el mercado doméstico. Te enseñamos todos los secretos de esta tecnología y analizamos los distintos modelos para que sepas que hay, y que comprar.</p>
 
 					</div>
 

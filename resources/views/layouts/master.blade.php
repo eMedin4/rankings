@@ -11,6 +11,17 @@
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<script src="https://use.fortawesome.com/96155e14.js"></script>
 	<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+
+	<!-- favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/favicon/apple-touch-icon.png') }}">
+		<link rel="icon" type="image/png" href="{{ asset('/assets/favicon/favicon-32x32.png') }}" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ asset('/assets/favicon/favicon-16x16.png') }}" sizes="16x16">
+		<link rel="manifest" href="{{ asset('/assets/favicon/manifest.json') }}">
+		<link rel="shortcut icon" href="{{ asset('/assets/favicon/favicon.ico') }}">
+		<meta name="msapplication-config" content="{{ asset('/assets/favicon/browserconfig.xml') }}">
+		<meta name="theme-color" content="#ffffff">
+	<!-- end favicons -->
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

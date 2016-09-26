@@ -619,6 +619,7 @@ article p {
     font-weight: 600;
     /*Hack: mas pequeño para que no haya mucho espacio entre file1 y file2 (no se puede tocar el width de file2 > label)*/
     width: 30px;
+    white-space: nowrap;
 }
 
 
@@ -698,6 +699,7 @@ article p {
     font-weight: 600;
     font-size: 26px;
     font-family: "open-sans-condensed",sans-serif;
+    background: url('../images/logo.png') no-repeat 3px 41px;
 }
 
 .logo:hover {
@@ -713,9 +715,9 @@ article p {
 }
 
 .amazon-btn {
-    background: #333;
-    color: #fff;
-    padding: 8px 24px;
+    background: #f0f0f0;
+    color: #444;
+    padding: 7px 19px;
     position: relative;
     top: -7px;
     font-weight: 600;
@@ -730,11 +732,17 @@ article p {
 .amazon-btn span {
     padding-left: 8px;
     font-size: 18px;
-    color: #edf8ff;
+    letter-spacing: -0.5px;
 }
 
 .grid-data .flex-h {
     justify-content: space-between;
+}
+
+.description {
+    padding: 0 60px;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 /*

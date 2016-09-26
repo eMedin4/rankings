@@ -32,6 +32,12 @@ return [
         'B00K9HID9Y',
         'B00K9HID1C',
         'B00K9HIF4C',
+        'B0151KMB9G',//es hdd
+        'B013J7HHCY',//es hdd
+        'B0151KM9FW',//es hdd
+        'B013J7WB3O',//es hdd
+        'B01A9GZGQ2',//duplicado con B00ZYNHDT4, solo cambia color y es mas caro
+
 
     ],
 
@@ -42,6 +48,15 @@ return [
         'B00A1ZTZNM' => 'Kingston SSDNow V300',
         'B00FXJWO5C' => 'Kingston SSDNow V300',
         'B00A35X6GM' => 'Kingston SSDNow V300',
+    ],
+
+    'size' => [
+        'B00COFMPAM' => '60',
+        'B00TGIVTP2' => '250',
+        'B00TGIVVKU' => '500',
+        'B01K1W7JNW' => '60',
+        'B014KH92IY' => '960',
+        'B00RQA6LFA' => '250',
     ],
 
 
@@ -118,6 +133,9 @@ return [
         ['B01AAKZRKW', '74.3', '0.0', '422', '396', '/image-18.png', 'Portable USB 3.1', 'http://ssd.userbenchmark.com/SpeedTest/117507/Samsung-Portable-SSD-T3'],
         ['B01AAKZRU2', '64.9', '0.0', '418', '358', '/image-18.png', 'Portable USB 3.1', 'http://ssd.userbenchmark.com/SpeedTest/81567/Samsung-Portable-SSD-T3'],
         ['B01AAKZRMK', '60.0', '0.0', '404', '340', '/image-18.png', 'Portable USB 3.1', 'http://ssd.userbenchmark.com/SpeedTest/130206/Samsung-Portable-SSD-T3'],
+        ['B00ZTRY532', '60.3', '0.0', '402', '312', '/image-19.png', 'Portable USB 3.1', '-'],//inventados
+        ['B00ZTRY5IW', '70.0', '0.0', '418', '354', '/image-19.png', 'Portable USB 3.1', '-'],
+        ['B00ZYNHDT4', '67.4', '0.0', '414', '344', '/image-19.png', 'Portable USB 3.1', '-'],//inventados
 
 
 
@@ -152,6 +170,7 @@ return [
 
         //mSATA
         ['B00CG8GTPO', '63.2', '0.0', '471', '173', '/image-12.jpg', 'mSata', 'http://ssd.userbenchmark.com/SpeedTest/536/KINGSTON-SMS200S3120G'],
+        ['B00COFMPAM', '51.3', '0.2', '361', '115', '/image-12.jpg', 'mSata', 'http://ssd.userbenchmark.com/SpeedTest/5751/KINGSTON-SMS200S360G'],
         ['B00JT0DSQK', '57.7', '0.0', '463', '163', '/image-12.jpg', 'mSata', 'http://ssd.userbenchmark.com/SpeedTest/163802/SMS200S3-240G'],
 
 

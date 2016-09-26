@@ -74,39 +74,6 @@
 
 	</div>
 
-<!-- 	<div class="grid-rank">
-
-		<table class="rank">
-
-			<tr>
-				<td><p><a href="{{$product->url}}">€{{$product->price['integer']}},{{$product->price['decimal']}}</a></p></td>
-				<td><a href="{{$product->url}}">Amazon</a></td>
-			</tr>
-
-			<tr>
-				<td><p class="bar-percent-{{$product->price_relative['class']}}">€{{$product->price_relative['value']}}</p></td>
-				<td>€/GB</td>
-			</tr>
-
-			<tr>
-				<td>
-					@if($product->ranking > 85)
-						<p class="item-value-4"><i class="fa fa-check-oi"></i><i class="fa fa-check-oi extra"></i></p>
-					@elseif($product->ranking >70)
-						<p class="item-value-3"><i class="fa fa-check-oi"></i></p>
-					@elseif($product->ranking >60)
-						<p class="item-value-2"><i class="fa fa-minus"></i></p>
-					@else
-						<p class="item-value-1"><i class="fa fa-x"></i></p>
-					@endif
-				</td>
-				<td>Valoración</td>
-			</tr>
-
-		</table>
-
-	</div> -->
-
 </article>
 
 @endforeach
