@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,600" rel="stylesheet">
 	<script src="https://use.fortawesome.com/96155e14.js"></script>
-	<link rel="stylesheet" href="{{ asset('/assets/css/style2.css') }}">
+	<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
 
 	<!-- favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/favicon/apple-touch-icon.png') }}">
