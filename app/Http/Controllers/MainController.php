@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 use App\Http\Requests;
-
 use App\Repositories\Repository;
+use App\Mail\ContactMail;
 
 class MainController extends Controller
 {
@@ -81,5 +82,31 @@ class MainController extends Controller
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Format('M.2 Sata 3', 'M.2 PCIe');
 		return view('pages.category')->with(compact('products', 'content'));
+	}
+
+	public function legal()
+	{
+		return view('pages.legal');
+	}
+
+	public function contact()
+	{
+		return view('pages.contact');
+	}
+
+	public function postContact()
+	{
+		$this->validate($this->request, [
+	        'name' => 'required|max:50',
+	        'email' => 'email|required|max:255',
+	        'comment' => 'required|max:5000',
+	    ],[
+	    	'name.required' => 'Por favor introduce tu nombre',
+	    	'email.required' => 'Por favor introduce tu email',
+	    	'email.email' => 'Tu email no tiene un formato válido',
+	    	'comment.required' => 'Por favor escribe tu comentario'
+	    ]);
+	    Mail::to('elann2013@gmail.com')->send(new ContactMail($this->request->all()));
+		return view('emails.success');
 	}
 }

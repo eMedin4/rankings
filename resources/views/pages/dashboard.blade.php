@@ -7,14 +7,16 @@
 @section('content')
 
 	<div class="dashboard-wrap">
+	<div>
+	Actualiza <a href="{{route('import')}}"> datos de Amazon </a> o actualiza <a href="{{route('stats')}}">stats</a>.
+	</div>
 	<table class="catalog">
 		<thead>
 			<tr>
-				<th>Orden</th>
-				<th>Disp</th>
-				<th></th>
+				<th>Or</th>
+				<th>Av</th>
+				<th>Main</th>
 				<th>Asin</th>
-				<th>Modelo</th>
 				<th>Gb</th>
 				<th>Titulo</th>
 				<th>€</th>
@@ -32,14 +34,13 @@
 			@if ($product->avaibility)
 				<tr>
 					<td>{{$loop->iteration}}</td>
-					<td>{{$product->avaibility}}</td>
+					<td class="avaibility">{{$product->avaibility}}</td>
 					<td>{{$product->amz_order}}</td>
-					<td>{{$product->id}}</td>
-					<td>{{$product->model}}</td>
-					<td>{{$product->size_total}}</td>
-					<td>{{$product->title}}</td>
-					<td class="catalog-split">{{$product->price['integer']}}</td>
-					<td>{{$product->price_relative['value']}}</td>
+					<td class="asin">{{$product->id}}</td>
+					<td class="size">{{$product->size_total}}</td>
+					<td class="size">{{$product->title}}</td>
+					<td class="price">{{$product->price['integer']}}</td>
+					<td class="price">{{$product->price_relative['value']}}</td>
 					@if($product->stat)
 					<td>{{$product->stat->ranking}}</td>
 					<td>{{$product->stat->speed}}</td>
@@ -60,10 +61,10 @@
 					<td>{{$product->avaibility}}</td>
 					<td>{{$product->amz_order}}</td>
 					<td>{{$product->id}}</td>
-					<td>{{$product->model}}</td>
-					<td>{{$product->size}}</td>
+					<td>{{$product->size_total}}</td>
 					<td>{{$product->title}}</td>
-					<td class="catalog-split">{{$product->price['integer']}}</td>
+					<td>{{$product->price['integer']}}</td>
+					<td>{{$product->price_relative['value']}}</td>
 					@if($product->stat)
 					<td>{{$product->stat->speed}}</td>
 					<td>{{$product->stat->popularity}}</td>

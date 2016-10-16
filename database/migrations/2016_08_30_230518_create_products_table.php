@@ -23,10 +23,8 @@ class CreateProductsTable extends Migration
             $table->string('title');
             $table->integer('price');
             $table->boolean('avaibility')->default(0);
-            $table->smallInteger('amz_order');
+            $table->mediumInteger('amz_order');
             $table->smallInteger('def_order')->default(0);
-            $table->tinyInteger('trend');
-            $table->timestamp('time_trend')->default(Carbon::now());
             $table->timestamps();
         });
 

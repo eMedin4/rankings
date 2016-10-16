@@ -1,24 +1,28 @@
 
 <div class="sidebar">
 
-	<div class="navigation">
-		<h3>Guías de compra</h3>
-		<a href="{{route('max100')}}"><i class="fa fa-chevron-right-mdi"></i>Menos de 100€</a>	
-		<a href="{{route('max200')}}"><i class="fa fa-chevron-right-mdi"></i>Menos de 200€</a>	
-		<a href="{{route('b128')}}"><i class="fa fa-chevron-right-mdi"></i>De 128 GB</a>
-		<a href="{{route('b256')}}"><i class="fa fa-chevron-right-mdi"></i>De 256 GB</a>
-		<a href="{{route('b512')}}"><i class="fa fa-chevron-right-mdi"></i>De 512 GB</a>	
-		<a href="{{route('b1tb')}}"><i class="fa fa-chevron-right-mdi"></i>De 1 TB o más</a>	
-		<a href="{{route('fm2')}}"><i class="fa fa-chevron-right-mdi"></i>Con formato M.2</a>	
-		<a href=""><i class="fa fa-chevron-right-mdi"></i>Mayor rendimiento</a>	
-	</div>
+	<ul class="navigation">
+		<li><h3>Comparativas</h3></li>
+		<li><a href="{{route('max100')}}">Mejor SSD por 100€</a></li>
+		<li><a href="{{route('max200')}}">Mejor SSD por 200€</a></li>
+		<li><a href="{{route('b128')}}">Mejor SSD de 120GB</a></li>
+		<li><a href="{{route('b256')}}">Mejor SSD de 250GB</a></li>
+		<li><a href="{{route('b512')}}">Mejor SSD de 500GB</a></li>
+		<li><a href="{{route('b1tb')}}">Mejor SSD de 1TB</a></li>
+		<li><a href="{{route('fm2')}}">El formato M.2</a></li>
+	</ul>
 
-	<div class="navigation navigation-device">
-		<h3>Análisis</h3>
-		<a href="{{route('evo750')}}"><i class="fa fa-chevron-right-mdi"></i>Samsung EVO 750</a>
-		<a href="{{route('evo850')}}"><i class="fa fa-chevron-right-mdi"></i>Samsung EVO 850</a>
-		<a href="{{route('v300')}}"><i class="fa fa-chevron-right-mdi"></i>Kingston SSDNow V300</a>
-		<a href="{{route('uv400')}}"><i class="fa fa-chevron-right-mdi"></i>Kingston SSDNow UV400</a>	
-	</div>
+	<ul class="navigation navigation-device">
+		<li><h3>Análisis</h3></li>
+		<li><a href="{{route('evo750')}}">Samsung EVO 750</a></li>
+		<li><a href="{{route('evo850')}}">Samsung EVO 850</a></li>
+		<li><a href="{{route('v300')}}">Kingston SSDNow V300</a></li>
+		<li><a href="{{route('uv400')}}">Kingston SSDNow UV400</a></li>
+	</ul>
+
+	<ul class="navigation navigation-extra">
+		<li><a rel="nofollow" href="{{route('legal')}}">Aviso legal</a></li>
+		<li><a rel="nofollow" href="{{route('contact')}}">Contacto</a></li>
+	</ul>
 
 </div>

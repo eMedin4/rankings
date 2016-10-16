@@ -3,29 +3,39 @@
 
 <article>
 
-	<div class="flex-h">
+	<div class="specs">
 
-		<div class="grid-image">
-			<a href="{{$product->url}}"><img src="{{asset('/assets/images') . $product->image}}"></a>
+		<div class="specs-image">
+			<a rel="nofollow" href="{{$product->url}}">
+				<picture>
+			        <source media="(min-width: 660px)" srcset="{{asset('/assets/images') . $product->image . '.jpg'}}">
+			        <source media="(max-width: 660px)" srcset="{{asset('/assets/images') . $product->image . '-small.jpg'}}">
+			        <img src="" alt="a cute kitten">
+			    </picture>
+			</a>
 		</div>
 
-		<div class="grid-data">
-			<h3><a href="{{$product->url}}">{{$product->title}} {{$product->size_format}}</a></h3>
-			<div class="flex-h">
-				<div>
-					<div><h4>Modelo</h4><p>{{$product->model}}</p></div>
-					<div><h4>Capacidad</h4><p>{{$product->size_format}}</p></div>
-					<div><h4>Formato</h4><p>{{$product->format}}</p></div>
-				</div>
-				<div>
-					<a class="amazon-btn" href="{{$product->url}}">Amazon<span>{{$product->price['integer']}},{{$product->price['decimal']}}</span> €</a>
-				</div>
+		<div class="specs-data">
+			<h2><a rel="nofollow" href="{{$product->url}}">{{$product->title}} {{$product->size_format}}</a></h2>
+			<div class="specs-extra">
+				<div><p>Modelo</p><h3>{{$product->model}}</h3></div>
+				<div><p>Capacidad</p><h3>{{$product->size_format}}</h3></div>
+				<div><p>Formato</p><h3>{{$product->format}}</h3></div>
+			</div>
+			<div class="image-mobile">
+				<a rel="nofollow" href="{{$product->url}}">
+
+				</a>
+			</div>
+			<div class="price">
+				<a rel="nofollow" class="amazon-link" href="{{$product->url}}">Amazon <span>{{$product->price['integer']}},{{$product->price['decimal']}}</span> €</a>
+				<a rel="nofollow" class="amazon-btn" href="{{$product->url}}">Ver ficha</a>
 			</div>
 		</div>
 
 	</div>
 
-	<div class="grid-stats">
+	<div class="stats">
 
 		<div class="file file-1">
 
@@ -66,7 +76,7 @@
 			<div>
 				<div class="label">Valoración</div>
 				<div class="bar-stat"><span class="bar-percent bar-percent-{{$product->ranking['class']}}"></span></div>
-				<div class="value">{{$product->ranking['value']}}<i>/10</i></div>
+				<div class="value value-ranking">{{$product->ranking['value']}}<i>/10</i></div>
 			</div>
 
 		</div>

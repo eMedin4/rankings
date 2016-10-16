@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 	<title>@yield('title')</title>
-	<meta name="description" content="Ranking SSD">
+	<meta name="description" content="@yield('metadescription')">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://use.typekit.net/fac6ixi.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,600" rel="stylesheet">
 	<script src="https://use.fortawesome.com/96155e14.js"></script>
-	<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('/assets/css/style2.css') }}">
 
 	<!-- favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/favicon/apple-touch-icon.png') }}">
@@ -36,17 +35,19 @@
 
 <body class="@yield('bodyclass', '')">
 
+	<div class="page-wrap">
 
-	<!--Content of page-->
-		@yield('content')
+		<!--Content of page-->
+			@yield('content')
 
-	<!--All site scripts-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="{{ asset('/assets/js/scripts.js') }}"></script>
+		<!--All site scripts-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			<script src="{{ asset('/assets/js/scripts.js') }}"></script>
 
-	<!--Page scripts-->
-		@yield('scripts')
+		<!--Page scripts-->
+			@yield('scripts')
 
+	</div>
 
 </body>
 </html>

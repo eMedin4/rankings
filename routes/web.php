@@ -10,7 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+Route::get('/aviso-legal', ['as' => 'legal', 'uses' => 'MainController@legal']);
+Route::get('/contacto', ['as' => 'contact', 'uses' => 'MainController@contact']);
+Route::post('/contacto', ['as' => 'postcontact', 'uses' => 'MainController@postContact']);
 
 
 Route::get('/', ['as' => 'main', 'uses' => 'MainController@main']);
@@ -33,10 +35,10 @@ Route::get('/mejor-ssd-m2', ['as' => 'fm2', 'uses' => 'MainController@fm2']);
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function () {
     
     Route::get('/', 'DashboardController@main');
-    Route::get('import', 'ProductController@init');
-    Route::get('stats', 'DashboardController@stats');
+    Route::get('import', ['as' => 'import', 'uses' => 'ProductController@init']);
+    Route::get('stats', ['as' => 'stats', 'uses' => 'DashboardController@stats']);
 
 });
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');

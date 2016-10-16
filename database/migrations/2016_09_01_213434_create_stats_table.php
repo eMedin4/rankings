@@ -24,6 +24,7 @@ class CreateStatsTable extends Migration
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->string('format');
             $table->smallInteger('ranking');
+            $table->mediumInteger('ordered');
             $table->timestamps();
         });
     }

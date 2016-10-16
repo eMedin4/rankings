@@ -33,32 +33,34 @@ class ProductController extends Controller
 	{
 		$getAmazonData = $this->getAmazonData($page);
 
-		//	MOSTRAMOS ERRORES O NULLS
+		// MOSTRAMOS ERRORES O NULLS
 		if (!isset($getAmazonData) || $getAmazonData->Items->Request->IsValid == False || $getAmazonData->Items->Request->Errors ) {
 			dd($getAmazonData);
 		} 
 
 
-
+		// RECORREMOS LOS PRODUCTOS
 		foreach ($getAmazonData->Items->Item as $item) {
-			//si tiene variaciones tiene parentasin
+
+			// SI TIENE PARENTASIN = TIENE VARIACIONES
 			if(isset($item->ParentASIN)) {
-				//cojemos los productos 'variaciones' y los recorremos
-				sleep(2);
+				
+				// PETICION A AMAZON 
 				$getAmazonVariations = $this->getAmazonVariations($item->ParentASIN);
 
-				/*if (!isset($getAmazonVariations) || $getAmazonVariations->Items->Request->IsValid == False || $getAmazonVariations->Items->Request->Errors ) {
-					dd($getAmazonVariations);
-				} */
-
-				if ($getAmazonVariations) {
+				// RECORREMOS LAS VARIACIONES DE ESTE PRODUCTO
+				if (isset($getAmazonVariations->Items->Item->Variations->Item)) {
 					foreach ($getAmazonVariations->Items->Item->Variations->Item as $itemVariation) {
+
+						// SI NO ESTÁ BANEADA, LA GUARDAMOS EN DB
 						if(!in_array($itemVariation->ASIN, config('products.ban'))) {
 							$this->repository->storeProduct($itemVariation, $item->DetailPageURL, $item->SalesRank);
 						}
 					}
 				}
 			} else {
+
+				// SI NO TIENE VARIACIONES, GUARDAMOS EL PRODUCTO
 				if(!in_array($item->ASIN, config('products.ban'))) {
 					$this->repository->storeProduct($item, $item->DetailPageURL, $item->SalesRank);
 				}
