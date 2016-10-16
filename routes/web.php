@@ -41,4 +41,5 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
 });
 
 Auth::routes();
-
+/*Deshabilitamos registros*/
+Route::any('register', 'Auth\LoginController@showLoginForm');
