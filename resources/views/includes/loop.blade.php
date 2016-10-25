@@ -10,7 +10,7 @@
 				<picture>
 			        <source media="(min-width: 660px)" srcset="{{asset('/assets/images') . $product->image . '.jpg'}}">
 			        <source media="(max-width: 660px)" srcset="{{asset('/assets/images') . $product->image . '-small.jpg'}}">
-			        <img src="" alt="a cute kitten">
+			        <img src="{{asset('/assets/images') . $product->image . '.jpg'}}" alt="{{$product->title}}" title="Disco SSD {{$product->title}}">
 			    </picture>
 			</a>
 		</div>

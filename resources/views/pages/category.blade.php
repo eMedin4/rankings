@@ -20,7 +20,10 @@
 						{!!$content['p']!!}
 					</div>
 
-					@include('includes.loop')
+					<div class="loop">
+						<time>Actualizado el {{$updated->formatLocalized('%e de %B del %y')}}</time>
+						@include('includes.loop')
+					</div>
 
 					<div class="content-text-sub">
 						<h2>disco duro ssd</h2>

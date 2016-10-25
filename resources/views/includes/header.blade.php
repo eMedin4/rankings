@@ -3,7 +3,7 @@
 	<div class="limit">
 		<div class="header-inner">
 			<div>
-				<a class="logo" href="{{route('main')}}"><img src="{{asset('/assets/images/logo.png')}}" width="108px" height="27" alt="RankingSSD" title="RankingSSD"></a>
+				<a class="logo" href="{{route('main')}}"><img src="{{asset('/assets/images/logo.png')}}" width="108" height="27" alt="RankingSSD" title="RankingSSD"></a>
 			</div>
 			<div class="top-menu">
 				<a href="{{route('main')}}">PRODUCTOS</a>

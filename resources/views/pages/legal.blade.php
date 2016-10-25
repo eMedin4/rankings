@@ -67,7 +67,7 @@
 					compartidos, transferidos, ni vendidos a ningún tercero.</p><p>
 					Por las mismas razones, el proceso de registro no debe ser utilizado 
 					para inscribir direcciones de correo de personas ajenas sin el 
-					consentimiento expreso de las personas afectadas. <a href="http://rankingssd.com" target="_blank">rankingssd.com</a> 
+					consentimiento expreso de las personas afectadas. Rankingssd.com
 					implementa como contramedida a esta prácticas una lista de correo de 
 					tipo double opt-in que necesita la confirmación explicita por parte del 
 					titular de la cuenta de correo electrónico indicada como dirección de 
@@ -82,7 +82,7 @@
 					sus datos de nuestro sistema.</p><p>
 					<strong>Alojamiento de datos</strong></p><p>
 					Por razones técnicas y de calidad de servicio, el blog 
-					<a href="http://rankingssd.com" target="_blank">rankingssd.com</a> se encuentra alojado en los servidores de la empresa
+					Rankingssd.com se encuentra alojado en los servidores de la empresa
 					 GIGAS (política de privacidad). Por las razones similares, la 
 					prestación del servicio de suscripción por correo electrónico y envío de
 					 newsletter se efectúa desde las instalaciones de la empresa MailChimp 
@@ -94,7 +94,7 @@
 					con un nivel adecuado de protección a efectos de la LOPD.</p><p>
 					<strong>Google Analytics</strong></p><p>
 					Google Analytics es un servicio análisis de datos estadísticas prestado 
-					por la empresa Google (política de privacidad). <a href="http://rankingssd.com" target="_blank">rankingssd.com</a> 
+					por la empresa Google (política de privacidad). Rankingssd.com
 					utiliza este servicio para realizar un seguimiento de las estadísticas 
 					de uso del mismo.</p><p>
 					Google Analytics utiliza cookies para ayudar al sitio web a analizar 
@@ -103,7 +103,7 @@
 					(incluyendo su dirección IP) será directamente transmitida y archivada 
 					por Google en los servidores de Estados Unidos.</p><p>
 					Google usará esta información por cuenta nuestra con el propósito de 
-					generar información estadísticas sobre el uso de <a href="http://rankingssd.com" target="_blank">rankingssd.com</a>, 
+					generar información estadísticas sobre el uso de Rankingssd.com, 
 					Google no asociará su dirección IP con ningún otro dato del que disponga
 					 Google. Google podrá transmitir dicha información a terceros cuando así
 					 se lo requiera la legislación, o cuando dichos terceros procesen la 
@@ -111,11 +111,11 @@
 					Puede Usted rechazar el tratamiento de los datos o la información 
 					rechazando el uso de cookies mediante la selección de la configuración 
 					apropiada de su navegador, sin embargo, de hacerlo, limitará la plena 
-					funcionabilidad de <a href="http://rankingssd.com" target="_blank">rankingssd.com</a>. Al utilizar este sitio web, da 
+					funcionabilidad de Rankingssd.com. Al utilizar este sitio web, da 
 					su consentimiento al tratamiento de información por Google en la forma y
 					 para los fines arriba indicados.</p><p>
 					<strong>Google AdSense</strong></p><p>
-					Google, como proveedor asociado de <a href="http://rankingssd.com" target="_blank">rankingssd.com</a>, utiliza cookies 
+					Google, como proveedor asociado de Rankingssd.com, utiliza cookies 
 					para publicar anuncios en este sitio web. El usuario puede inhabilitar 
 					el uso de estas cookies siguiendo las instrucciones que se indican en 
 					sección de publicidad de la política de privacidad de Google.</p><p>
@@ -128,7 +128,7 @@
 					práctica y conocer sus opciones para impedir que estas empresas usen 
 					esta información, consulte por favor el enlace anterior.</p><p>
 					<strong>Consentimiento al tratamiento de los datos personales del usuario</strong></p><p>
-					En el marco de sus actividades, <a href="http://rankingssd.com" target="_blank">rankingssd.com</a> dispone de la 
+					En el marco de sus actividades, Rankingssd.com dispone de la 
 					posibilidad de registro de usuarios para el envío de comunicaciones por 
 					correo electrónico, efectuar comentarios en el blog y enviar mensajes a 
 					través del formulario de contacto.</p><p>
@@ -143,7 +143,7 @@
 					 los proveedores arriba mencionados.</p><p>
 					Los datos de carácter personal solicitados en estas actividades, 
 					quedarán incorporados a un fichero cuya finalidad es la comunicación de 
-					novedades relativas al sitio web de <a href="http://rankingssd.com" target="_blank">rankingssd.com</a> actuando como 
+					novedades relativas al sitio web de Rankingssd.com actuando como 
 					responsable del fichero el prestador. Los campos marcados con asterisco 
 					son de cumplimentación obligatoria, siendo imposible realizar la 
 					finalidad expresada si no se aportan estos datos. Queda igualmente 
@@ -153,7 +153,7 @@
 					De conformidad con lo establecido en el artículo 5 de la LOPD, se 
 					informa al usuario que la finalidad exclusiva de la base de datos de 
 					registro es el envío de información sobre novedades relacionadas con el 
-					sitio web <a href="http://rankingssd.com" target="_blank">rankingssd.com</a>. Únicamente los titulares tendrán acceso a
+					sitio web Rankingssd.com. Únicamente los titulares tendrán acceso a
 					 sus datos, y bajo ningún concepto, estos datos serán cedidos, 
 					compartidos, transferidos, ni vendidos a ningún tercero.</p><p>
 					De acuerdo con lo dispuesto en la LOPD, el usuario en cualquier momento 
@@ -164,7 +164,7 @@
 					eliminación inmediata de los datos personales del usuario de nuestra 
 					base de datos.</p><p>
 					<strong>Enlaces de afiliación</strong></p><p>
-					<a href="http://rankingssd.com" target="_blank">rankingssd.com</a> utiliza ocasionalmente enlaces de afiliación de 
+					Rankingssd.com utiliza ocasionalmente enlaces de afiliación de 
 					productos y servicios de marcas que hayan establecido un programa de 
 					afiliados. Estos enlaces se usan exclusivamente después de hacer usado 
 					dichos productos y servicios, o bien, haber realizado pruebas que 
@@ -174,12 +174,12 @@
 					 además que este tipo de prácticas resultarían muy contraproducentes 
 					para la reputación del propio sitio web que los promociona.</p><p>
 					<strong>Propiedad Intelectual y uso de los contenidos</strong></p><p>
-					El sitio web <a href="http://rankingssd.com" target="_blank">rankingssd.com</a>, incluyendo a título enunciativo pero 
+					El sitio web Rankingssd.com, incluyendo a título enunciativo pero 
 					no limitativo su programación, edición, compilación y demás elementos 
 					necesarios para su funcionamiento, los diseños, logotipos, texto y/o 
 					gráficos son propiedad del prestador o en su caso dispone de licencia o 
 					autorización expresa por parte de los autores.</p><p>
-					<a href="http://rankingssd.com" target="_blank">rankingssd.com</a> otorga al usuario una licencia Creative Commons 
+					Rankingssd.com otorga al usuario una licencia Creative Commons 
 					Reconocimiento-NoComercial-<wbr>CompartirIgual 3.0 cuyos términos exactos se 
 					pueden consultar en este enlace.</p><p>
 					Cualquier uso no autorizado previamente por parte del prestador será 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<title>@yield('title')</title>
 	<meta name="description" content="@yield('metadescription')">

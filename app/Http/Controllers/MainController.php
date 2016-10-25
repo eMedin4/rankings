@@ -24,7 +24,8 @@ class MainController extends Controller
     public function main()
     {
 		$products = $this->repository->getActiveProducts();
-		return view('pages.main')->with(compact('products'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.main')->with(compact('products', 'updated'));
     }
 
 	public function single()
@@ -32,56 +33,64 @@ class MainController extends Controller
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$search = str_replace('-', ' + ', $this->request->path());
 		$products = $this->repository->search($search);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 
 	public function max100()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->MaxPrice(10000);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 
 	public function max200()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->MaxPrice(20000);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 
 	public function b128()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(100,200);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 
 	public function b256()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(200,400);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 
 	public function b512()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(400,800);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 	
 	public function b1tb()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Size(800,8000);
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}	
 
 	public function fm2()
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Format('M.2 Sata 3', 'M.2 PCIe');
-		return view('pages.category')->with(compact('products', 'content'));
+		$updated = $products->sortBy('updated_at')->first()->updated_at;
+		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
 
 	public function legal()

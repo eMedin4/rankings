@@ -29,7 +29,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
     box-sizing: border-box;
 }
 body, html {
@@ -157,6 +156,21 @@ body {
 .content-text-sub {
     padding: 50px 60px;
     border-top: 1px solid #e5eaec;
+}
+
+.loop {
+    position: relative;
+}
+
+time {
+    font-size: 14px;
+    color: #879196;
+    background: #e5eaec;
+    position: absolute;
+    top: -26px;
+    padding: 0 8px;
+    line-height: 26px;
+    left: 60px;
 }
 
 .sidebar {
