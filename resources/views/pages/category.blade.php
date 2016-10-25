@@ -21,7 +21,7 @@
 					</div>
 
 					<div class="loop">
-						<time>Actualizado el {{$updated->formatLocalized('%e de %B del %y')}}</time>
+						<time>Actualizado el {{$updated->formatLocalized('%e/%m/%y')}}</time>
 						@include('includes.loop')
 					</div>
 

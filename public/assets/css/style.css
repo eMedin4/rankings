@@ -624,7 +624,7 @@ button {
     }
 
     .header-inner {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .header-main {
@@ -648,11 +648,15 @@ button {
 
     .content-text,
     .content-text-sub {
-        padding: 40px 20px;
+        padding: 40px 30px;
+    }
+
+    time {
+        left: 30px;
     }
 
     article {
-        padding: 30px 30px;
+        padding: 30px;
     }
 
     .specs-image {
@@ -744,15 +748,6 @@ button {
         padding: 0;
     }
 
-    .content-text,
-    .content-text-sub {
-        padding: 40px;
-    }
-
-    article {
-        padding: 50px;
-    }
-
     .header .header-inner {
         padding-right: 10px;
     }
@@ -779,7 +774,7 @@ button {
 
     .content-text,
     .content-text-sub {
-        padding: 20px;
+        padding: 20px 20px 40px;
     }
 
     article {
@@ -788,6 +783,10 @@ button {
 
     .specs-extra p {
         display: none;
+    }
+
+    time {
+        left: 20px;
     }
 
 }
@@ -887,28 +886,30 @@ button {
     }
 
     .stats .file > div {
-        padding-bottom: 11px;
+        padding-bottom: 15px;
         position: relative;
+        display: block;
     }
 
     .stats .label {
         position: relative;
         z-index: 11;
-        padding-left: 4px;
+        padding-left: 8px;
         color: #2b3438;    
     }
 
     .stats .bar-stat {
-        height: 23px;
-        top: -1px;
+        height: 28px;
+        top: -4px;
         z-index: 10;
         position: absolute;
     }
 
     .stats .value {
-        position: relative;
+        position: absolute;
         z-index: 11;
-        padding-right: 4px;
+        right: 8px;
+        top: 0;
     }
 
     .stats .value-ranking {
