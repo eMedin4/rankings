@@ -22,13 +22,9 @@ class ProductController extends Controller
 	{
 		$this->repository->resetAvaibility();
 		$this->import(1);
-		sleep(2);
 		$this->import(2);		
-		sleep(2);
 		$this->import(3);		
-		sleep(2);
 		$this->import(4);		
-		sleep(2);
 		$this->import(5);
 	}
 
@@ -40,11 +36,17 @@ class ProductController extends Controller
 		// MOSTRAMOS ERRORES O NULLS
 		if (!isset($getAmazonData)) {
 			dd($getAmazonData);
+		} 		
+
+		if (!isset($getAmazonData->Items->Item)) {
+			dd($getAmazonData);
 		} 
 
 
 		// RECORREMOS LOS PRODUCTOS
 		foreach ($getAmazonData->Items->Item as $item) {
+
+			sleep(1);
 
 			// SI TIENE PARENTASIN = TIENE VARIACIONES
 			if(isset($item->ParentASIN)) {
