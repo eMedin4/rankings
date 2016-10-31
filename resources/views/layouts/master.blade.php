@@ -37,14 +37,13 @@
 
 		<!--Content of page-->
 			@yield('content')
-
 		<!--All site scripts-->
 
 	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="{{ asset('/assets/js/scripts.js') }}"></script>
-<!--Page scripts-->yield('scripts')
+<!--Page scripts--> @yield('scripts')
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,600" rel="stylesheet">
 <script src="https://use.fortawesome.com/96155e14.js"></script>
 </body>

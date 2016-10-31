@@ -302,6 +302,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+    font-size: 14px;
 }
 
 .table-content table {
