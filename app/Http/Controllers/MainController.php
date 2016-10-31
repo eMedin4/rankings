@@ -89,7 +89,6 @@ class MainController extends Controller
 	{
 		$content = config('products.descriptions')[$this->request->route()->getName()];
 		$products = $this->repository->Format('M.2 Sata 3', 'M.2 PCIe');
-		dd($products);
 		$updated = $products->sortBy('updated_at')->first()->updated_at;
 		return view('pages.category')->with(compact('products', 'content', 'updated'));
 	}
