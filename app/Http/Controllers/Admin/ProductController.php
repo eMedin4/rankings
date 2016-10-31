@@ -25,7 +25,11 @@ class ProductController extends Controller
 		sleep(2);
 		$this->import(2);		
 		sleep(2);
-		$this->import(3);
+		$this->import(3);		
+		sleep(2);
+		$this->import(4);		
+		sleep(2);
+		$this->import(5);
 	}
 
 
