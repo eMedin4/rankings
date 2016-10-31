@@ -38,7 +38,7 @@ class ProductController extends Controller
 		$getAmazonData = $this->getAmazonData($page);
 
 		// MOSTRAMOS ERRORES O NULLS
-		if (!isset($getAmazonData) {
+		if (!isset($getAmazonData)) {
 			dd($getAmazonData);
 		} 
 
